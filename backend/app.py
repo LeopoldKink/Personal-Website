@@ -34,6 +34,7 @@ def mail():
 
 @app.route('/webpack')
 def webpack():
+    print('joni')
     return render_template('webpack.html')
 
 @app.route('/customwebpack')
