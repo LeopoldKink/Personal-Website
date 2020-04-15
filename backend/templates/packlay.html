@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/packlay.css">
+</head>
+<body>
+    <div class="section">
+        <div class="box">
+            <div class="content">
+                <h3>Webpage</h3>
+                <p>Lorem ipsum dolor sit Lorem ipsum dolor sit
+                    Lorem ipsum dolor sit Lorem ipsum dolor sit
+                    Lorem ipsum dolor sitLorem ipsum dolor sit
+                </p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+        <video id="slider" autoplay muted loop>
+            <source src="/static/vid/video3.mp4" type="video/mp4"> 
+        </video>
+        <ul class="navigation">
+            <li onclick="videoUrl('/static/vid/video3.mp4')"><img src="/static/img/thum3.jpg" alt=""></li>
+            <li onclick="videoUrl('/static/vid/video4.mp4')"><img src="/static/img/thum4.jpg" alt=""></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function videoUrl(hmmm){
+            document.getElementById("slider").src = hmmm;
+        }
+    </script>
+</body>
+</html>

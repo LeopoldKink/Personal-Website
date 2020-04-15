@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="main">
+  <div class="form-menu">
+      <form class="form-mail" action="mailto:leopold.kink@live.de" method="post" enctype="text/plain">
+        <div class="name-mail">
+            <div class="form-group">
+                <input name="Mail " type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+            <div class="form-group">
+                <input name="Name " type="name" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+            </div>
+        </div>
+        <div class="form-group">
+          <textarea name="Projekt " style="resize: none;" class="form-control" id="exampleFormControlTextarea1" placeholder="Dein Projekt" rows="8"></textarea>
+        </div>
+        <div class="button-sumbit">
+          <input class="mail-btn" type="submit" value="Projekt abschicken ->">
+        </div>
+      </form>
+  </div>
+  <div class="car">
+    <img src="/static/img/car.gif" alt="">
+  </div>
+</div>
+{% endblock content %}
+
+
