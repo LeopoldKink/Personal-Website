@@ -29,6 +29,7 @@ def index():
 
 @app.route('/mail')
 def mail():
+    print('Lori')
     return render_template('mail.html')
 
 @app.route('/webpack')
