@@ -24,6 +24,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://postgres:haha@localhost:5432
 
 @app.route('/')
 def index():
+    print('Hello')
     return render_template('index.html')
 
 @app.route('/mail')
