@@ -1,44 +1,56 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %}{% endblock %}</title>
     <link type="text/css" rel="stylesheet" href="/static/css/layout.css" />
     <link type="text/css" rel="stylesheet" href="/static/css/index.css" />
-    <link type="text/css" rel="stylesheet" href="/static/css/mail.css"/>
-    <link type="text/css" rel="stylesheet" href="/static/css/webpack.css"/>
-    <link type="text/css" rel="stylesheet" href="/static/css/customwebpack.css">
-    <link type="text/css" rel="stylesheet" href="/static/css/webpack.css">
-    <link type="text/css" rel="stylesheet" href="/static/css/packlay.css">
-    <link rel="stylesheet" href="/static/css/team.css">
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link type="text/css" rel="stylesheet" href="/static/css/mail.css" />
+    <link type="text/css" rel="stylesheet" href="/static/css/webpack.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/static/css/customwebpack.css"
+    />
+    <link type="text/css" rel="stylesheet" href="/static/css/webpack.css" />
+    <link type="text/css" rel="stylesheet" href="/static/css/packlay.css" />
+    <link rel="stylesheet" href="/static/css/team.css" />
+    <link rel="stylesheet" href="/static/css/style.css" />
     <script src="/static/img/parallax.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
       <h2 class="logo">
-        <img style="height: 40px;" src="/static/img/logo2.png" alt="">
+        <img style="height: 40px;" src="/static/img/logo3.gif" alt="" />
       </h2>
-        <li class="menu">
-          <div class="drop">
-            <a class="dropbtn">Agentur<i style="padding: 2px;margin-left: 2px;" class="fa fa-angle-down"></i></a>
-            <div class="dropdown-menu">
-              <a href="{{ url_for('mail') }}">Mail Us</a>
-              <a href="{{ url_for('webpack') }}">Webpacks</a>
-              <a href="{{ url_for('custom_webpack') }}">Custom Webpacks</a>
-            </div>
+      <li class="menu">
+        <div class="drop">
+          <a class="dropbtn"
+            >Agentur<i
+              style="padding: 2px; margin-left: 2px;"
+              class="fa fa-angle-down"
+            ></i
+          ></a>
+          <div class="dropdown-menu">
+            <a href="{{ url_for('mail') }}">Mail Us</a>
+            <a href="{{ url_for('webpack') }}">Webpacks</a>
+            <a href="{{ url_for('custom_webpack') }}">Custom Webpacks</a>
           </div>
-          <a href="{{ url_for('index') }}">Home</a>
-          <a href="#">Projekte</a>
-          <a href="#">Team</a>
-          <a href="#">Impressum</a>
-        </li>
-      </div>
+        </div>
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="#">Projekte</a>
+        <a href="#">Team</a>
+        <a href="#">Impressum</a>
+      </li>
+    </div>
     <main>
-        {% block content %}{% endblock %}
+      {% block content %}{% endblock %}
     </main>
-</body>
+  </body>
 </html>
