@@ -1,16 +1,18 @@
-{% extends "layout.html" %}
-{% block content %}
-	<div class="space">
-		<ul id="scene">
-			<li class="layer" data-depth=".1"><img src="/static/img/text.png"></li>
-			<li class="layer" data-depth="1"><img src="/static/img/planet1.png"></li>
-			<li class="layer" data-depth="-1"><img src="/static/img/planet2.png"></li>
-			<li class="layer" data-depth="2"><img src="/static/img/astronaut.png"></li>
-			<li class="layer" data-depth="0.5"><img src="/static/img/rocket.png"></li>
-		</ul>
-	</div>
-	<script>
-		var scene = document.getElementById('scene');
-		var parallax = new Parallax(scene);
-	</script>
+{% extends "layout.html" %} {% block content %}
+<div class="space">
+  <ul id="scene">
+    <li class="layer" data-depth=".1"><img src="/static/img/text.png" /></li>
+    <li class="layer" data-depth="1"><img src="/static/img/planet1.png" /></li>
+    <li class="layer" data-depth="-1"><img src="/static/img/planet2.png" /></li>
+    <li class="layer" data-depth="2">
+      <img src="/static/img/astronaut.png" />
+    </li>
+    <li class="layer" data-depth="0.5"><img src="/static/img/rocket.png" /></li>
+  </ul>
+</div>
+<script>
+  var scene = document.getElementById("scene");
+  var parallax = new Parallax(scene);
+</script>
+
 {% endblock content %}

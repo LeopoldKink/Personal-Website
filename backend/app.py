@@ -24,17 +24,14 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://postgres:haha@localhost:5432
 
 @app.route('/')
 def index():
-    print('Hello')
     return render_template('index.html')
 
 @app.route('/mail')
 def mail():
-    print('Lori')
     return render_template('mail.html')
 
 @app.route('/webpack')
 def webpack():
-    print('joni')
     return render_template('webpack.html')
 
 @app.route('/customwebpack')
