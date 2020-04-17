@@ -127,19 +127,31 @@
   z-index: 1000;
 }
 .header.animatednav{
-background: #fff;
-height: 60px;
-box-shadow: 0 1px 20px rgba(0, 0, 0, 1);
-transition: 1s;
+  background: linear-gradient(100deg, #e2dfe4 80%, #ff69b4 20%);
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100px;
+  box-shadow: 0 6px 2px -2px rgb(109, 109, 109);
+  transition: 1s;
+  z-index: 100000;
 
 }
 .header.animatednav div.logo{
-  margin-right: 1300px;
   transition: 1.1s;
 }
 .header.animatednav li{  
     transition: 1s;
-    margin-top: -40px
+}
+.header.animatednav li .dropdown-menu{
+  background: linear-gradient(100deg, #e2dfe4 80%, #ff69b4 20%);
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  box-shadow: 0 6px 2px -2px rgb(109, 109, 109);
+  z-index: 10000;
 }
 
 
