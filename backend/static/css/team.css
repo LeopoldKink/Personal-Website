@@ -12,7 +12,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 43%;
+    height: 15%;
+    margin-left: 90%;
 }
 .face {
     position: fixed;
