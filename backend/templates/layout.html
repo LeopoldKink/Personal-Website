@@ -24,19 +24,16 @@
     />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script   src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script type="text/javascript">
-      $(window).on('scroll', function(){
-          if($(window).scrollTop()){
-              $('.header').addClass('animatednav')
-          }
-          else
-          {
-              $('.header').removeClass('animatednav') 
-          }
-      })
-      
-  </script>
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop()) {
+          $(".header").addClass("animatednav");
+        } else {
+          $(".header").removeClass("animatednav");
+        }
+      });
+    </script>
   </head>
   <body>
     <div class="header">
@@ -59,7 +56,7 @@
         </div>
         <a href="{{ url_for('index') }}">Home</a>
         <a href="#">Projekte</a>
-        <a href="#">Team</a>
+        <a href="{{ url_for('team') }}">Team</a>
         <a href="#">Impressum</a>
       </li>
     </div>
