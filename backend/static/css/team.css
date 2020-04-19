@@ -118,19 +118,24 @@
 }
 .overlayLeft,
 .overlayRight {
-  width: 203%;
+  width: 100%;
   height: 100%;
   position: absolute;
   visibility: hidden;
   background-color: #ff69b4;
   border: 10px solid #ff69b4;
-  border-left: 202px solid #ff69b4;
+  border-left: 0px solid #ff69b4;
+  transition: 0.1s;
   z-index: 1;
   left: -100%;
 }
 .containerLeft:hover + .containerRight .overlayRight {
   visibility: visible;
+  width: 203%;
+  border-left: 340px solid #ff69b4;
 }
 .overlayRight:hover {
   visibility: visible;
+  width: 203%;
+  border-left: 340px solid #ff69b4;
 }
