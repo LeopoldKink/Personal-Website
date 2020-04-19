@@ -1,67 +1,45 @@
-{% extends "layout.html" %}
-{% block content %}
+{% extends "layout.html" %} {% block content %}
 <div class="team-main">
-    <div class="smiley">
-        <div class="face">
-            <div class="eyes">
-                <div class="eye"></div>
-                <div class="eye"></div>
-            </div>
-        </div>
+  <div class="smiley">
+    <div class="face">
+      <div class="eyes">
+        <div class="eye"></div>
+        <div class="eye"></div>
+      </div>
     </div>
-    <div class="img-content">
-        <div class="card">
-            <img src="/static/img/test-person.jpg" alt="">
-                <div class="img-text">
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-                         dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-                          clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-                           sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem 
-                            ipsum dolor sit amet.
-                    </p>
-                </div>
-            <img src="/static/img/test-person.jpg" alt="">
+  </div>
+  <div class="img-content">
+    <div align="center">
+      <div class="containerLeft">
+        <img src="/static/img/test-person.jpg" alt="Avatar" class="imageLeft" />
+        <div class="overlayLeft">
+          <div class="text">Left</div>
         </div>
-        <div class="card">
-            <img src="/static/img/test-person.jpg" alt="">
-            <div class="img-text">
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-                     dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-                      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-                       sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem 
-                        ipsum dolor sit amet.
-                </p>
-            </div>
-            <img src="/static/img/test-person.jpg" alt="">
+      </div>
+      <div class="containerRight">
+        <img
+          src="/static/img/Lorenz_Sport.JPG"
+          alt="Avatar"
+          class="imageRight"
+        />
+        <div class="overlayRight">
+          <div class="text">Right</div>
         </div>
-        <div class="card">
-            <img src="/static/img/test-person.jpg" alt="">
-            <div class="img-text">
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-                     dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-                      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-                       sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem 
-                        ipsum dolor sit amet.
-                </p>
-            </div>
-            <img src="/static/img/test-person.jpg" alt="">
-        </div>
+      </div>
     </div>
-</div>
-<script>
-    document.querySelector('body').addEventListener('mousemove', eyeball);
-    function eyeball(){
-        var eye = document.querySelectorAll('.eye');
-        eye.forEach(function(eye){
-            let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
-            let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
-            let radian = Math.atan2(event.pageX - x, event.pageY - y);
-            let rot = (radian * (180 / Math.PI) * -1) + 270;
-            eye.style.transform = "rotate(" + rot +"deg)"; 
-        })
+  </div>
+  <script>
+    document.querySelector("body").addEventListener("mousemove", eyeball);
+    function eyeball() {
+      var eye = document.querySelectorAll(".eye");
+      eye.forEach(function (eye) {
+        let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
+        let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
+        let radian = Math.atan2(event.pageX - x, event.pageY - y);
+        let rot = radian * (180 / Math.PI) * -1 + 270;
+        eye.style.transform = "rotate(" + rot + "deg)";
+      });
     }
-</script>
-{% endblock content %}
+  </script>
+  {% endblock content %}
+</div>
