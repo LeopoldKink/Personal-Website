@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .team-main {
+    width: 100%;
+    height: 100%;
+    background: #e2dfe4;
+    z-index: -1000000;
+  }
+  .smiley {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    margin-left: 90%;
+  }
+  .face {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .face::before {
+    content: "";
+    position: absolute;
+    top: 140px;
+    width: 50px;
+    height: 17px;
+    background: #ff69b4;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    transition: 0.5s;
+  }
+  .over:hover ~ .face::before {
+    top: 210px;
+    width: 150px;
+    height: 20px;
+    background: #ff69b4;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transition: 0.5s;
+  }
+  .eyes {
+    position: relative;
+    top: -40px;
+    display: flex;
+  }
+  .eyes .eye {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: #fff;
+    margin: 0 4px;
+    border-radius: 50%;
+  }
+  .eyes .eye::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    background: #333;
+    border-radius: 50%;
+  }
+  .over {
+    background: #000;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin-left: 100px;
+    transform: translateY(400px);
+  }
+  /* CARDS*/
+  .containerPro{
+      position: relative;
+      width: 1200px;
+      height: 600px;
+      margin: 80px auto 0;
+      background: #e2dfe4;
+  }
+  .containerPro .boxPro{
+      position: relative;
+      width: calc(400px - 30px);
+      height: calc(300px - 30px);
+      background: #ff69b4;
+      float: left;
+      margin: 15px;
+      box-sizing: border-box;
+      overflow: hidden;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, .8);
+  }
+  .containerPro .boxPro:before{
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      box-sizing: border-box;
+      transition: 0.5s;
+      transform: scaleX(0);
+      opacity: 0;
+      z-index: 1;
+  }
+  .containerPro .boxPro:hover:before{
+      transform: scaleX(1);
+      opacity: 1;
+  }
+  
+.containerPro .boxPro:after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transform: scaleY(0);
+    opacity: 0;
+    z-index: 1;
+}
+.containerPro .boxPro:hover:after{
+    transform: scaleY(1);
+    opacity: 1;
+}
+.containerPro .boxPro .imgBoxPro img{
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    transition: 0.5s;
+}
+.containerPro .boxPro .imgBoxPro{
+    position: relative;
+    
+}
+.containerPro .boxPro:hover .imgBoxPro img{
+    opacity: .2;
+    transform: scale(1.2);
+}
+.containerPro .boxPro .contentPro{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.containerPro .boxPro .contentPro h2{
+    padding: 0;
+    margin: 0 0 10px;
+    color: #fff;
+    transition: 0.5s;
+    transform: translateY(-50px);
+    opacity: 0;
+    visibility: hidden;
+}
+.containerPro .boxPro .contentPro p{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    transition: 0.5s;
+    transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+}
+.containerPro .boxPro .contentPro button{
+    display: inline-block;
+    transition: 0.5s;
+    border: 7.5px solid #e2dfe4;
+    border-radius: 7.5px;
+    transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+    background-color: #e2dfe4;
+    margin-top: 15px;
+}
+
+.containerPro .boxPro .contentPro a{
+    padding: 5px 10px;
+    width: 75;
+    height: 25;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #000;
+}
+.containerPro .boxPro:hover .contentPro h2,
+.containerPro .boxPro:hover .contentPro p,
+.containerPro .boxPro:hover .contentPro button{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+    transition-delay: 0.2s;
+}
+.containerPro .boxPro:hover .contentPro button:hover{
+    
+
