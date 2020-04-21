@@ -48,3 +48,7 @@ def team():
 
 if __name__ == '__main__':
     app.run()
+
+@app.route('/projekte')
+def projekte():
+    return render_template('projekte.html')

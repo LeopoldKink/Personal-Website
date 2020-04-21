@@ -10,7 +10,11 @@
       "request": "launch",
       "module": "flask",
       "env": {
+<<<<<<< HEAD
         "FLASK_APP": "C:/Users/Leopold/Desktop/Personal Website/backend/app.py",
+=======
+        "FLASK_APP": "/Users/jonathansoemer/Desktop/website dizz/Personal-Website/backend/app.py",
+>>>>>>> 4a636be7ce3991efd19b7e9ea12e095b4c427e88
         "FLASK_ENV": "development",
         "FLASK_DEBUG": "0"
       },
