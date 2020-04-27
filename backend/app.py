@@ -22,6 +22,12 @@ app.config['SECRET_KEY'] = '5791628bb0b13ce0c676dfde280ba245'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://postgres:haha@localhost:5432/design'
 
 
+
+
+@app.route('/packlay')
+def packlay():
+    return render_template('packlay.html')
+
 @app.route('/')
 def index():
     return render_template('index.html')

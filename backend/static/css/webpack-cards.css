@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body-webpack{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(100deg, #e2dfe4 80%, #ff69b4 20%);
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container-webpack{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
+    height: 600px;
+    background: #e2dfe4;
+    margin: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+}
+.container-webpack .imgBx-webpack{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background: #006dbc;
+}
+.container-webpack .imgBx-webpack::before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #000;
+    opacity: 0.2;
+    font-size: 8em;
+    font-weight: 800;
+}
+.container-webpack .imgBx-webpack img{
+    position: relative;
+    width: 700px;
+}
+.container-webpack .details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+}
+.container-webpack .details h2{
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    line-height: 0.8em;
+    color: #444;
+}
+.container-webpack .details h2 span{
+    font-size: 0.4em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999;
+}
+.container-webpack .details p{
+    max-width: 85%;
+    padding: 20px;
+}
+.container-webpack .details h3{
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    color: #a2a2a2;
+    float: left;
+}
+.container-webpack .details button{
+    background: #006dbc;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    padding: 15px 20px;
+    margin-top: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 40px;
+    float: right;
+    cursor: pointer;
+}
+.container-webpack .details button a{
+    text-decoration: none;
+    color: #fff;
+}
+@media (max-width: 1080px){
+    .body-webpack{
+        background: #e2dfe4;
+        transform: translateY(100px);
+    }
+    .container-webpack{
+        height: auto;
+    }
+    .container-webpack .imgBx-webpack{
+        padding: 40px;
+        box-sizing: border-box;
+        width: 100% !important;
+        text-align: center;
+        overflow: hidden;
+    }
+    .container-webpack .imgBx-webpack img{
+        left: initial;
+        max-width: 100%;
+    }
+    .details{
+        width: 100% !important;
+        height: auto;
+        padding: 0;
+    }
+    .container-webpack .details p{
+        max-width: 100%;
+        margin-left: 0;
+        padding: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
