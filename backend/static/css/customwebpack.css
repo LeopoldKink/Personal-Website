@@ -3,115 +3,55 @@
     padding: 0;
     box-sizing: border-box;
 }
-.text{
-    text-align: center;
-    transform: translateY(260px);
-    overflow: hidden;
-}
-.body{
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #fff;
-    background: linear-gradient(100deg, #fff 80%, #ff69b4 20%);
-    background-position: fixed;
-    background-size: cover;
-}
-.loader{
-    position: relative;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005)
-}
-.loader:hover{
-    background: #ff69b4;
-    box-shadow: 0 0 5px #ff69b4,
-                0 0 25px #ff69b4,
-                0 0 50px #ff69b4,
-                0 0 200px #ff69b4;
-}
-.loader span{
+.social-menu ul {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.social-menu ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+.social-menu ul li .fa {
+    color: #000000;
+    font-size: 25px;
+    line-height: 50px;
+    transition: .5s;
+}
+.social-menu ul li .fa:hover {
+    color: #ffffff;
+}
+.social-menu ul li a {
+    position: relative;
     display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
 }
-.loader span:nth-child(1){
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 40px;
-    background: linear-gradient(90deg, transparent,#ff69b4);
-    animation: animate1 1s linear infinite;
-    animation-delay: 0s;
+.social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
 }
-@keyframes animate1{
-    0%{
-        left: -100%;
-    }
-    100%{
-        left: 100%;
-    }
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
 }
-
-
-
-.loader span:nth-child(3){
-    bottom: 0;
-    left: -100%;
-    width: 100%;
-    height: 40px;
-    background: linear-gradient(270deg, transparent,#ff69b4);
-    animation: animate3 1s linear infinite;
-    animation-delay: 0s;
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #55acee;
 }
-@keyframes animate3{
-    0%{
-        left: 100%;
-    }
-    100%{
-        left: -100%;
-    }
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #e4405f;
 }
-
-
-
-.loader span:nth-child(2){
-    right: 0;
-    top: -100%;
-    width: 40px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent,#ff69b4);
-    animation: animate2 1s linear infinite;
-    animation-delay: 0.5s;
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: #cd201f;
 }
-@keyframes animate2{
-    0%{
-        top: -100%;
-    }
-    100%{
-        top: 100%;
-    }
-}
-
-
-
-
-.loader span:nth-child(4){
-    left: 0;
-    top: 100%;
-    width: 40px;
-    height: 100%;
-    background: linear-gradient(0deg, transparent,#ff69b4);
-    animation: animate4 1s linear infinite;
-    animation-delay: 0.5s;
-}
-@keyframes animate4{
-    0%{
-        top: 100%;
-    }
-    100%{
-        top: -100%;
-    }
+.social-menu ul li:nth-child(5) a:hover {
+    background-color: #0077B5;
 }
