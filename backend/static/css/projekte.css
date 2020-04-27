@@ -188,8 +188,8 @@
     visibility: hidden;
     background-color: #e2dfe4;
     margin-top: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 }
-
 .containerPro .boxPro .contentPro a{
     padding: 5px 10px;
     width: 75;
@@ -198,6 +198,7 @@
     border-radius: 4px;
     font-size: 16px;
     color: #000;
+    z-index: 1000;
 }
 .containerPro .boxPro:hover .contentPro h2,
 .containerPro .boxPro:hover .contentPro p,
@@ -207,6 +208,28 @@
     transform: translateY(0px);
     transition-delay: 0.2s;
 }
-.containerPro .boxPro:hover .contentPro button:hover{
-    
+.containerPro .boxPro .contentPro button:before {
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  background: #e2dfe4;
+  transition: 0.1s;
+  transform: scale(.9);
+  z-index: -1;
+}
 
+.containerPro .boxPro .contentPro button:hover:before {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #bebebe;
+  filter: blur(3px);
+}
+
+.containerPro .boxPro .contentPro button:hover {
+  color: #bebebe;
+  box-shadow: 0 0 15px #bebebe;
+  text-shadow: 0 0 15px #bebebe;
+}
