@@ -3,29 +3,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %}{% endblock %}</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <link rel="icon" type="image/x-icon" href="/static/img/toplogo.gif" />
     <link type="text/css" rel="stylesheet" href="/static/css/layout.css" />
     <link type="text/css" rel="stylesheet" href="/static/css/index.css" />
     <link type="text/css" rel="stylesheet" href="/static/css/mail.css" />
-    <link type="text/css" rel="stylesheet" href="/static/css/webpack.css" />
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="/static/css/customwebpack.css"
-    />
-    <link type="text/css" rel="stylesheet" href="/static/css/webpack.css" />
-    <link type="text/css" rel="stylesheet" href="/static/css/webpack-cards.css" />
     <link rel="stylesheet" href="/static/css/team.css" />
     <link rel="stylesheet" href="/static/css/projekte.css">
     <link rel="stylesheet" href="/static/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="/static/css/webpack.css" />
+    <link type="text/css" rel="stylesheet" href="/static/css/webpack-cards.css" />
     <script src="/static/img/parallax.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script type="text/javascript">
       $(window).on("scroll", function () {
         if ($(window).scrollTop()) {
@@ -38,16 +32,25 @@
   </head>
   <body>
     <div class="header">
-      <div class="logo">
-        <img style="height: 40px;" src="/static/img/logo3.gif" alt="" />
-      </div>
-      <li class="menu">
+      <h2 class="logo"><img src="/static/img/logo3.gif" alt=""></h2>
+      <input type="checkbox" id="chk">
+      <label for="chk" class="show-menu-btn">
+        <i class="fas fa-ellipsis-h"></i>
+      </label>
+    
+      <ul class="menu">
         <a href="{{ url_for('mail') }}">Mail Us</a>
-        <a href="{{ url_for('webpack') }}">Webpacks</a>
+        <a href="{{ url_for('webpack') }}">Webpack</a>
         <a href="{{ url_for('projekte') }}">Projekte</a>
         <a href="{{ url_for('team') }}">Team</a>
         <a href="#">Impressum</a>
-      </li>
+        <label for="chk" class="hide-menu-btn">
+          <i class="fas fa-times"></i>
+        </label>
+        <div id="avatar-img-div" class="hidden">
+          <img id="avatar-img" class="ui avatar image" src="">
+        </div>
+      </ul>
     </div>
     <main>
       {% block content %}{% endblock %}
