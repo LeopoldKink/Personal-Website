@@ -144,6 +144,7 @@
 .imageRight {
   z-index: 0;
   margin-left: 10px;
+  transition-delay: 0.1s;
 }
 .textleft {
   color: #ff69b4;
@@ -223,11 +224,12 @@
 .containerRight:hover .overlayRight {
   visibility: visible;
   width: 200%;
-  border-right: 550px solid #fff;
+  border-right: 560px solid #fff;
   z-index: 100000;
   right: 1%;
 }
 
 .containerRight:hover .imageRight {
   z-index: 5000000;
+  transition-delay: 0s;
 }
