@@ -9,6 +9,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #e2dfe4;
 }
 .banner video{
     position: absolute;
