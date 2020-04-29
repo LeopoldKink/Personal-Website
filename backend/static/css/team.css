@@ -81,7 +81,44 @@
 }
 
 /*   CARDS   */
+.teamheader {
+  position: relative;
+  align-items: center;
+  color: #ff69b4;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 5%;
+  margin-bottom: 15px;
+}
 
+.teamheader h1 {
+  padding: 5px;
+  display: block;
+  width: 40%;
+}
+.teamsup {
+  position: relative;
+  align-items: center;
+  color: #000;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 1%;
+}
+.teamsup p {
+  padding: 10px;
+  display: block;
+  width: 40%;
+  margin-bottom: 35px;
+}
+.teamheader p {
+  padding: 5px;
+  display: block;
+  width: 40%;
+}
 .containerRight,
 .containerLeft {
   position: relative;
@@ -107,42 +144,92 @@
 .imageRight {
   z-index: 0;
   margin-left: 10px;
+  transition-delay: 0.1s;
 }
-.text {
-  color: white;
+.textleft {
+  color: #ff69b4;
   font-size: 20px;
-  position: absolute;
-  top: 50%;
+  position: relative;
+  top: 35%;
   left: 50%;
+  right: -45%;
   transform: translate(-50%, -50%);
-  font-family: sans-serif;
 }
-.overlayLeft,
+.textleft {
+  color: #ff69b4;
+  font-size: 20px;
+  position: relative;
+}
+.textonimage {
+  position: absolute;
+  z-index: 100;
+  bottom: 8px;
+  left: 16px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: #ff69b4;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  transform: translateY(-20px);
+}
+.textonimage p {
+  padding: 10px;
+  background-color: #fff;
+  width: 40%;
+}
+.name {
+  color: #ff69b4;
+  margin-bottom: 20px;
+  width: 100%;
+  left: 200px;
+}
+.arbeit {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.overlayLeft {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  visibility: hidden;
+  background-color: white;
+  border: 15px solid white;
+  transition: 0.1s;
+  border-left: 0px solid white;
+  z-index: 1;
+}
 .overlayRight {
   width: 100%;
   height: 100%;
   position: absolute;
   visibility: hidden;
-  background-color: #ff69b4;
-  border: 15px solid #ff69b4;
+  background-color: white;
+  border: 15px solid white;
   transition: 0.1s;
+  border-right: 0px solid #fff;
+  z-index: 100000;
+  right: 1%;
 }
-.overlayLeft {
-  border-left: 0px solid #ff69b4;
-  z-index: 1;
-}
-.overlayRight {
-  border-left: 0px solid #6978ff;
-  z-index: 1;
-  left: -100%;
-}
+
 .containerLeft:hover .overlayLeft {
   visibility: visible;
   width: 207%;
-  border-left: 550px solid #ff69b4;
+  border-left: 550px solid white;
 }
-.overlayRight:hover {
+
+.containerRight:hover .overlayRight {
   visibility: visible;
-  width: 207%;
-  border-left: 550px solid #ff69b4;
+  width: 200%;
+  border-right: 560px solid #fff;
+  z-index: 100000;
+  right: 1%;
+}
+
+.containerRight:hover .imageRight {
+  z-index: 5000000;
+  transition-delay: 0s;
 }
