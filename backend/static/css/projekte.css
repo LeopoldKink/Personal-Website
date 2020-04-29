@@ -6,12 +6,17 @@
   .team-main {
     width: 100%;
     height: 100%;
-    background: #e2dfe4;
+    background: linear-gradient(100deg, #e2dfe4 80%, #ff69b4 20%);
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     z-index: -1000000;
   }
   .smiley {
     display: flex;
     /*display: flex;*/
+    visibility: hidden;
     justify-content: center;
     align-items: center;
     height: 15%;
@@ -85,14 +90,22 @@
 .containerumallesrundherum{
   width: 100%;
   height: 100%;
-  background: #e2dfe4;
+  background: linear-gradient(100deg, #e2dfe4 80%, #ff69b4 20%);
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .containerPro{
   position: relative;
   width: 1200px;
   height: 600px;
   margin: 80px auto 0;
-  background: #e2dfe4;
+  background: linear-gradient(100deg, #e2dfe4 80%, #ff69b4 20%);
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -219,28 +232,34 @@
 }
 
 @media screen and (max-width:480px){
+  .team-main{
+    background: #e2dfe4;
+  }
   .containerumallesrundherum{
     width: 100%;
     height: auto;
+    background: #e2dfe4;
   }
   .containerPro{
     width: 100%;
-    height: 100%;
-    background-attachment: unset;
-    background-position: unset;
-    background-size: auto;
-  
-    width: auto;
-    float: none;
+    float: left;
+    display: block;
+    padding: 0;
+    margin: 0;
+    background: #e2dfe4;
   }
   .boxPro{
-    width: 100%;
-    height: 100%;
-    float: none;
-    margin: 0 0 10 0;
+    display: block;
+    min-width: 90%;
+    height: 10%;
   }
-  #projects img{
-    width: 55%;
-    height: auto;
+  .boxPro .imgBoxPro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-} i 
+  .boxPro .imgBoxPro img{
+    min-width: 100%;
+    min-height: 100%;
+  }
+}

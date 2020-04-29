@@ -109,3 +109,12 @@ main{
       opacity: 0;
     }
   }
+  @media screen and (max-width:1150px){
+    .output h1{
+      font-size: 25px
+    }
+    .output{
+      font-size: 15px;
+      transform: translateY(-130px);
+    }
+  }
