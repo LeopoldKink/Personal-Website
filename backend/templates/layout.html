@@ -4,9 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %}{% endblock %}</title>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
@@ -15,10 +19,14 @@
     <link type="text/css" rel="stylesheet" href="/static/css/index.css" />
     <link type="text/css" rel="stylesheet" href="/static/css/mail.css" />
     <link rel="stylesheet" href="/static/css/team.css" />
-    <link rel="stylesheet" href="/static/css/projekte.css">
+    <link rel="stylesheet" href="/static/css/projekte.css" />
     <link rel="stylesheet" href="/static/css/style.css" />
     <link type="text/css" rel="stylesheet" href="/static/css/webpack.css" />
-    <link type="text/css" rel="stylesheet" href="/static/css/webpack-cards.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/static/css/webpack-cards.css"
+    />
     <script src="/static/img/parallax.js"></script>
     <script type="text/javascript">
       $(window).on("scroll", function () {
@@ -32,12 +40,12 @@
   </head>
   <body>
     <div class="header">
-      <h2 class="logo"><img src="/static/img/logo3.gif" alt=""></h2>
-      <input type="checkbox" id="chk">
+      <h2 class="logo"><img src="/static/img/logonedsorund.gif" alt="" /></h2>
+      <input type="checkbox" id="chk" />
       <label for="chk" class="show-menu-btn">
         <i class="fas fa-ellipsis-h"></i>
       </label>
-    
+
       <ul class="menu">
         <a href="{{ url_for('mail') }}">Mail Us</a>
         <a href="{{ url_for('webpack') }}">Webpack</a>
@@ -48,7 +56,7 @@
           <i class="fas fa-times"></i>
         </label>
         <div id="avatar-img-div" class="hidden">
-          <img id="avatar-img" class="ui avatar image" src="">
+          <img id="avatar-img" class="ui avatar image" src="" />
         </div>
       </ul>
     </div>

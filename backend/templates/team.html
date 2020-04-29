@@ -1,5 +1,5 @@
 {% extends "layout.html" %} {% block content %}
-<div class="team-main">
+<body class="team-main">
   <div class="smiley">
     <div class="face">
       <div class="eyes">
@@ -11,27 +11,24 @@
   <div class="teamheader">
     <h1>UNSER TEAM</h1>
   </div>
-  <div class="teamsup"><p>Wir sind Jung und Creativ</p></div>
+  <div class="teamsup"><p>Ist Jung und Creativ</p></div>
   <div class="img-content">
     <div align="center">
+      <!-- Lorenz -->
       <div class="containerLeft">
-        <img src="/static/img/test-person.jpg" alt="Avatar" class="imageLeft" />
-        <div class="textonimage">
-          <p>Desing & Frontend</p>
-        </div>
+        <img src="/static/img/lorenz.jpg" alt="Avatar" class="imageLeft" />
         <div class="overlayLeft">
           <div class="textleft">
             <div class="name"><h1>Lorenz</h1></div>
             <div class="arbeit">
+              <!-- Hier text zur aufgabe -->
               <p>
-                Ich mache des Frontend und Desing und gern auch mall ne kleine
-                animation
+                Kümmert sich am liebsten ums frontend und Desing. Er ist hauptsächlich zuständig für den Cerativen teil an der oberfläch der Webseite.
               </p>
             </div>
             <div class="hobby">
               <p>
-                In meiner freizeit Kletter, Skate oder Surfe ich gerne auch
-                Kreative arbeit mag ich gern
+                Hat spas dran sich in dinge rein zu fuchsen und ist auch gerne mal perfektionistisch. Hat er mal eine Idee im kopf versucht er alles möglich um diese um zu setzen.
               </p>
             </div>
           </div>
@@ -44,26 +41,118 @@
           class="imageRight"
         />
         <div class="overlayRight">
-          <div class="textleft">
+          <div class="textright">
             <div class="name"><h1>Lorenz</h1></div>
             <div class="arbeit">
+              <!-- Hier text zu Hobby und Leidenschaft -->
               <p>
-                Ich mache des Frontend und Desing und gern auch mall ne kleine
-                animation
+                In seiner freizeit trainirt er am liebsten für's Klettern ansonsten skatet oder surft er noch. Ansich ist er gerne auch mal drausen unterwegs.
               </p>
             </div>
             <div class="hobby">
               <p>
-                In meiner freizeit Kletter, Skate oder Surfe ich gerne auch
-                Kreative arbeit mag ich gern
+                Am Programiren hab ich auch sau viel Spaß,das entspant mich so, und ich libe es die kleinen probleme zu lösen
               </p>
             </div>
           </div>
           </div>
         </div>
+        <!-- Leopold -->
+        <div class="containerLeft">
+          <img src="/static/img/leopold.jpg" alt="Avatar" class="imageLeft" />
+          <div class="overlayLeft">
+            <div class="textleft">
+              <div class="name"><h1>Leopold</h1></div>
+              <div class="arbeit">
+                <!-- Hier text zur aufgabe -->
+                <p>
+                  Kümmert sich am liebsten ums Bakend. Kennt sich mit server und Datenbank aus
+                </p>
+              </div>
+              <div class="hobby">
+                <p>
+                  Kann auch frontend und Hilft am Lorenz mal ganz gern. Auserdem IST HALT KRASS DER JUNGE
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="containerRight">
+          <img
+            src="/static/img/Leosport.JPG"
+            alt="Avatar"
+            class="imageRight"
+          />
+
+          <div class="overlayRight">
+            <div class="textright">
+              <div class="name"><h1>Leopold</h1></div>
+              <div class="arbeit">
+                <!-- Hier text zu Hobby und Leidenschaft -->
+                <p>
+                  Basketballert ganz gerne
+                </p>
+              </div>
+              <div class="hobby">
+                <p>
+                  wenn er mal ne minute frei hat übt er tip 10
+                </p>
+              </div>
+            </div>
+            </div>
+          </div>
+          <!-- Jonathan -->
+          <div class="containerLeft">
+            <img src="/static/img/jon.jpg" alt="Avatar" class="imageLeft" />
+            <div class="overlayLeft">
+              <div class="textleft">
+                <div class="name"><h1>Jonathan</h1></div>
+                <div class="arbeit">
+                  <!-- Hier text zur aufgabe -->
+                  <p>
+                    Kanns halt
+                  </p>
+                </div>
+                <div class="hobby">
+                  <p>
+                    wenn er grade nicht beschäftigt ist, dann isst er neben bei noch kneke brot
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="containerRight">
+            <img
+              src="/static/img/jonsport.JPG"
+              alt="Avatar"
+              class="imageRight"
+            />
+            
+            <div class="overlayRight">
+              <div class="textright">
+                <div class="name"><h1>Jonathan</h1></div>
+                <div class="arbeit">
+                  <!-- Hier text zu Hobby und Leidenschaft -->
+                  <p>
+                    Locht gerne ein Holeinone und so. man kennt ihn
+                  </p>
+                </div>
+                <div class="hobby">
+                  <p>
+                    wenn ihm grade niemand zuschaut dan probt er den laufsteg für gntm
+                  </p>
+                </div>
+              </div>
+              </div>
+            </div>
       </div>
     </div>
-  </div>
+</body>
+  <div class=warum><p>Warum machen wir das: Für uns alle ist programiren eine leidenschaft wir haben grosen spaß daran virtuelle 
+    ideen zu verwirklichen und es ist immer ein tolles gefühl wen man ein problem gelöst hat und der selbst geschrieben code perfekt 
+    aufgeht. Wie treffen uns auch gerne und Programiren zusamen oder erklären uns gegensteitig neun Code. Wir sind immer sehr
+     gespannt neue dinge auszuprobiren und wollen und weiter bilden. Natürlich spielt geld auch eine rolle jeder braucht irgendwie
+    eine kleine einnahme quelle neben der schule.</p></div>
   <script>
     document.querySelector("body").addEventListener("mousemove", eyeball);
     function eyeball() {
