@@ -4,10 +4,7 @@
   box-sizing: border-box;
 }
 .team-main {
-  width: 100%;
-  height: 100%;
-  background: #e2dfe4;
-  z-index: -1000000;
+  background-color: #e2dfe4;
 }
 .smiley {
   display: flex;
@@ -92,14 +89,36 @@
   height: 5%;
   margin-bottom: 15px;
 }
+.warum {
+  position: relative;
+  align-items: center;
+  color: black;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  bottom: -10px;
+  margin-bottom: 40px;
+}
+.warum p {
+  padding: 10px;
+  display: block;
+  background-color: white;
+  width: 1110px;
+}
 
 .teamheader h1 {
   padding: 5px;
+  padding-bottom: 40px;
   display: block;
-  width: 40%;
+  font-size: 50px;
+  background-color: white;
+  width: 1110px;
+  margin-top: 130px;
+  margin-bottom: 50px;
 }
 .teamsup {
-  position: relative;
+  position: absolute;
   align-items: center;
   color: #000;
   text-align: center;
@@ -107,17 +126,20 @@
   display: flex;
   width: 100%;
   height: 1%;
+  top: 180px;
 }
 .teamsup p {
   padding: 10px;
   display: block;
   width: 40%;
-  margin-bottom: 35px;
 }
 .teamheader p {
   padding: 5px;
   display: block;
   width: 40%;
+}
+.img-content {
+  margin-top: 90px;
 }
 .containerRight,
 .containerLeft {
@@ -146,40 +168,32 @@
   margin-left: 10px;
   transition-delay: 0.1s;
 }
-.textleft {
+.textleft,
+.textright {
   color: #ff69b4;
   font-size: 20px;
   position: relative;
-  top: 35%;
-  left: 50%;
+
   right: -45%;
   transform: translate(-50%, -50%);
 }
 .textleft {
-  color: #ff69b4;
+  top: 43%;
+  color: #000;
   font-size: 20px;
   position: relative;
+  left: 37%;
+  width: 70%;
 }
-.textonimage {
-  position: absolute;
-  z-index: 100;
-  bottom: 8px;
-  left: 16px;
-  width: 100%;
-  text-align: center;
-  font-size: 18px;
-  color: #ff69b4;
-  font-weight: 600;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  transform: translateY(-20px);
+.textright {
+  top: 33%;
+  color: #000;
+  font-size: 20px;
+  position: relative;
+  left: 37%;
+  width: 70%;
 }
-.textonimage p {
-  padding: 10px;
-  background-color: #fff;
-  width: 40%;
-}
+
 .name {
   color: #ff69b4;
   margin-bottom: 20px;
@@ -211,25 +225,25 @@
   border: 15px solid white;
   transition: 0.1s;
   border-right: 0px solid #fff;
-  z-index: 100000;
+  z-index: 100;
   right: 1%;
 }
 
 .containerLeft:hover .overlayLeft {
   visibility: visible;
-  width: 207%;
+  width: 202%;
   border-left: 550px solid white;
 }
 
 .containerRight:hover .overlayRight {
   visibility: visible;
-  width: 200%;
-  border-right: 560px solid #fff;
-  z-index: 100000;
-  right: 1%;
+  width: 202%;
+  border-right: 590px solid #fff;
+  z-index: 100;
+  right: -2px;
 }
 
 .containerRight:hover .imageRight {
-  z-index: 5000000;
+  z-index: 500;
   transition-delay: 0s;
 }
