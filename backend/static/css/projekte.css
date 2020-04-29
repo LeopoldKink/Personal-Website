@@ -110,6 +110,22 @@
   background-size: cover;
   background-position: center;
 }
+.projectsheader{
+  position: relative;
+  align-items: center;
+  color: #ff69b4;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 5%;
+  margin-bottom: 25px;
+}
+.projectsheader h1 {
+  padding: 5px;
+  display: block;
+  width: 40%;
+}
 .containerPro .boxPro{
     position: relative;
     width: 30%;
@@ -245,8 +261,11 @@
     float: left;
     display: block;
     padding: 0;
-    margin: 0;
+    margin: .9%;
     background: #e2dfe4;
+  }
+  .projectsheader h1{
+    font-size: 20px;
   }
   .boxPro{
     display: block;
