@@ -9,7 +9,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #e2dfe4;
+    background: #fff;
 }
 .banner video{
     position: absolute;
@@ -40,7 +40,7 @@ main{
     margin: 0;
     padding: 0;
     font-size: 1.5em;
-    color: #ff69b4;
+    color: #000;
     text-shadow: 2px 2px 4px #666;
 }
   /*  CONTENT 2 */
@@ -59,7 +59,7 @@ main{
   .output {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    color: #ff69b4;
+    color: #000;
     z-index: 1000;
     font-size: 30px;
     font-weight: 900;

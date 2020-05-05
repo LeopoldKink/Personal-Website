@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 .body-webpack{
+    transform: translateY(30%);
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,7 +12,7 @@
     align-items: center;
     min-height: 100vh;
     font-family: 'Courier New', Courier, monospace;
-    background: linear-gradient(100deg, #e2dfe4 80%, #ff69b4 20%);
+    background: #fff;
     background-position: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -24,7 +25,7 @@
     justify-content: space-between;
     width: 900px;
     height: 600px;
-    background: #e2dfe4;
+    background: #fff;
     margin: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
 }
@@ -33,9 +34,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    left: 30px;
     width: 50%;
     height: 100%;
-    background: #006dbc;
+    background: #fff;
 }
 .container-webpack .imgBx-webpack::before{
     content: '';
@@ -49,7 +51,7 @@
 }
 .container-webpack .imgBx-webpack img{
     position: relative;
-    width: 700px;
+    width: 450px;
 }
 .container-webpack .details{
     display: flex;
@@ -75,7 +77,8 @@
 }
 .container-webpack .details p{
     max-width: 85%;
-    padding: 20px;
+    padding: 10px;
+    transform: translate(20px);
 }
 .container-webpack .details h3{
     margin: 0;
@@ -85,7 +88,7 @@
     float: left;
 }
 .container-webpack .details button{
-    background: #006dbc;
+    background: #000;
     color: #fff;
     border: none;
     box-shadow: none;
@@ -96,17 +99,35 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: 600;
-    border-radius: 40px;
     float: right;
     cursor: pointer;
+    border-radius: 5px;
 }
 .container-webpack .details button a{
     text-decoration: none;
     color: #fff;
 }
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 90%;
+    transform: translateY(200px);
+    width: 100%;
+}
+.arrow img{
+    max-width: 50px;
+    max-height: 50px;
+    transition: 0.5s;
+}
+.arrow img:hover{
+    max-width: 65px;
+    max-height: 65px;
+}
 @media (max-width: 1080px){
     .body-webpack{
-        background: #e2dfe4;
+        background: #fff;
         transform: translateY(100px);
     }
     .container-webpack{
@@ -118,6 +139,7 @@
         width: 100% !important;
         text-align: center;
         overflow: hidden;
+        left: 0;
     }
     .container-webpack .imgBx-webpack img{
         left: initial;
@@ -134,5 +156,9 @@
         padding: 0;
         padding-top: 15px;
         padding-bottom: 15px;
+        transform: translateX(0px);
+    }
+    .arrow{
+        display: none;
     }
 }

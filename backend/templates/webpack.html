@@ -1,47 +1,55 @@
 {% extends "layout.html" %}
 {% block content %}
-<div class="body">
-    <div class="container">
-        <div class="box">
-            <div class="icon">01</div>
-            <div class="content-hover-webpack">
-                <h3>Webpage</h3>
-                <p>Lorem ipsum dolor sit Lorem ipsum dolor sit
-                    Lorem ipsum dolor sit Lorem ipsum dolor sit
-                    Lorem ipsum dolor sitLorem ipsum dolor sit
-                </p>
-                <a href="#web-pack-content-1">Read more</a>
-            </div>
+<div class="testimonial-section">
+    <div class="inner-width">
+      <h1>Unsere Angebote</h1>
+      <br>
+      <br>
+      <br>
+  
+      <div class="testimonial-contents">
+        <div class="testimonial active" id="test-1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur et adipisci ut, impedit cumque, similique, eum tenetur, numquam eligendi aliquid. Nulla sit, cupiditate corporis labore, modi natus officiis asperiores!</p>
+          <span class="description">Upgrade / Website / App / Online Shop</span>
         </div>
-        <div class="box">
-            <div class="icon">02</div>
-            <div class="content-hover-webpack">
-                <h3>Handy Apps</h3>
-                <p>Lorem ipsum dolor sit Lorem ipsum dolor sit
-                    Lorem ipsum dolor sit Lorem ipsum dolor sit
-                    Lorem ipsum dolor sitLorem ipsum dolor sit
-                </p>
-                <a href="#web-pack-content-2">Read more</a>
-            </div>
+    </div>
+  </div>
+  <div class="arrow">
+    <a href="#web-pack-content-0"><img src="/static/img/arrow.png" alt=""></a>
+</div>
+<div class="body-webpack" id="web-pack-content-0">
+    <div class="container-webpack">
+        <div class="imgBx-webpack">
+            <img src="/static/img/edit.png" alt="">
         </div>
-        <div class="box">
-            <div class="icon">03</div>
-            <div class="content-hover-webpack">
-                <h3>E-Commerce</h3>
-                <p>Lorem ipsum dolor sit Lorem ipsum dolor sit
-                    Lorem ipsum dolor sit Lorem ipsum dolor sit
-                    Lorem ipsum dolor sitLorem ipsum dolor sit
-                </p>
-                <a href="#web-pack-content-3">Read more</a>
+        <div class="details">
+            <div class="content-webpack">
+                <h2>Upgrade<br><span>
+                    Running Collection
+                </span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores cupiditate recusandae dolor.
+                     Fugiat, vel atque fuga numquam corrupti minus qui earum quaerat vero quis nemo, quas
+                    perferendis debitis assumenda aperiam!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores cupiditate recusandae dolor.
+                    Fugiat, vel atque fuga numquam corrupti minus qui earum quaerat vero quis nemo, quas
+                   perferendis debitis assumenda aperiam!
+                   Lorem ipsum dolor sit ametr!</p>
+                <h3>150$</h3>
+                <button><a href="/mail">Schreib uns!</a></button>
             </div>
         </div>
     </div>
 </div>
+<div class="arrow">
+    <a href="#web-pack-content-1"><img src="/static/img/arrow.png" alt=""></a>
+</div>
+
+
 
 <div class="body-webpack" id="web-pack-content-1">
     <div class="container-webpack">
         <div class="imgBx-webpack">
-            <img src="/static/img/user.png" alt="">
+            <img src="/static/img/web.png" alt="">
         </div>
         <div class="details">
             <div class="content-webpack">
@@ -61,11 +69,14 @@
         </div>
     </div>
 </div>
+<div class="arrow">
+    <a href="#web-pack-content-2"><img src="/static/img/arrow.png" alt=""></a>
+</div>
 
 <div class="body-webpack" id="web-pack-content-2">
     <div class="container-webpack">
         <div class="imgBx-webpack">
-            <img src="/static/img/coding.png" alt="">
+            <img src="/static/img/tablet.png" alt="">
         </div>
         <div class="details">
             <div class="content-webpack">
@@ -85,11 +96,14 @@
         </div>
     </div>
 </div>
+<div class="arrow">
+    <a href="#web-pack-content-3"><img src="/static/img/arrow.png" alt=""></a>
+</div>
 
 <div class="body-webpack" id="web-pack-content-3">
     <div class="container-webpack">
         <div class="imgBx-webpack">
-            <img src="/static/img/search.png" alt="">
+            <img src="/static/img/shop.png" alt="">
         </div>
         <div class="details">
             <div class="content-webpack">
@@ -108,5 +122,8 @@
             </div>
         </div>
     </div>
+</div>
+<div class="arrow" style="transform: rotate(180deg);margin-top: 200px;">
+    <a href="#web-pack-content-0"><img src="/static/img/arrow.png" alt=""></a>
 </div>
 {% endblock content %}
