@@ -5,7 +5,7 @@
     justify-content: center;
     height: 100vh;
     align-items: center;
-    background: linear-gradient(100deg, #e2dfe4 80%, #ff69b4 20%);
+    background: #fff;
     background-position: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -43,7 +43,7 @@
     position: relative;
     width: 80px;
     height: 80px;
-    color: #e2dfe4;
+    color: #fff;
     background: #000;
     display: flex;
     justify-content: center;
@@ -55,27 +55,27 @@
     transition: 1s;
 }
 .container .box:nth-child(1) .icon{
-    box-shadow: 0 0 0 0 #ff69b4;
-    background: #ff69b4;
+    box-shadow: 0 0 0 0 #000;
+    background: #000;
 }
 .container .box:nth-child(1):hover .icon{
-    box-shadow: 0 0 0 400px #ff69b4;
+    box-shadow: 0 0 0 400px #fff;
 }
 
 .container .box:nth-child(2) .icon{
-    box-shadow: 0 0 0 0 #ff69b4;
-    background: #ff69b4;
+    box-shadow: 0 0 0 0 #000;
+    background: #000;
 }
 .container .box:nth-child(2):hover .icon{
-    box-shadow: 0 0 0 400px #ff69b4;
+    box-shadow: 0 0 0 400px #fff;
 }
 
 .container .box:nth-child(3) .icon{
-    box-shadow: 0 0 0 0 #ff69b4;
-    background: #ff69b4;
+    box-shadow: 0 0 0 0 #000;
+    background: #000;
 }
 .container .box:nth-child(3):hover .icon{
-    box-shadow: 0 0 0 400px #ff69b4;
+    box-shadow: 0 0 0 400px #fff;
 }
 
 
@@ -101,7 +101,7 @@
 .container .box .content-hover-webpack a{
     display: inline-block;
     padding: 10px 20px;
-    background: #e2dfe4;
+    background: #fff;
     border-radius: 4px;
     text-decoration: none;
     color: #000;
