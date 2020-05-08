@@ -14,8 +14,13 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      charset="utf-8"
+    ></script>
     <link rel="icon" type="image/x-icon" href="/static/img/toplogo.gif" />
     <link type="text/css" rel="stylesheet" href="/static/css/layout.css" />
+    <link type="text/css" rel="stylesheet" href="/static/css/layout.scss" />
     <link type="text/css" rel="stylesheet" href="/static/css/index.css" />
     <link type="text/css" rel="stylesheet" href="/static/css/mail.css" />
     <link rel="stylesheet" href="/static/css/team.css" />
@@ -40,18 +45,22 @@
   </head>
   <body>
     <div class="header">
-      <h2 class="logo"><img src="/static/img/logonedsorund.gif" alt="" /></h2>
+      <h2 class="logo"><img src="/static/img/logoSW.gif" alt="" /></h2>
       <input type="checkbox" id="chk" />
       <label for="chk" class="show-menu-btn">
         <i class="fas fa-ellipsis-h"></i>
       </label>
 
       <ul class="menu">
-        <a href="{{ url_for('mail') }}">Mail Us</a>
-        <a href="{{ url_for('webpack') }}">Webpack</a>
-        <a href="{{ url_for('projekte') }}">Projekte</a>
-        <a href="{{ url_for('team') }}">Team</a>
-        <a href="#">Impressum</a>
+        <li><a href="{{ url_for('mail') }}">Mail Us</a></li>
+        <li></li>
+        <li><a href="{{ url_for('webpack') }}">Webpack</a></li>
+        <li></li>
+        <li><a href="{{ url_for('projekte') }}">Projekte</a></li>
+        <li></li>
+        <li><a href="{{ url_for('team') }}">Team</a></li>
+        <li></li>
+        <li><a href="#">Impressum</a></li>
         <label for="chk" class="hide-menu-btn">
           <i class="fas fa-times"></i>
         </label>
