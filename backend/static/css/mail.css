@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: linear-gradient(100deg, #e2dfe4 80%, #ff69b4 20%);
+    background: #fff;
     background-position: fixed;
     background-size: cover;
 }
@@ -28,6 +28,7 @@
 .form-group {
     margin-bottom: 1rem;
     width: 616px;
+    transform: translateX(6px);
 }
 .form-control {
     display: block;
@@ -124,16 +125,17 @@
 .mail-btn {
   border: none;
   color: #fff;
-  background-color: #ff69b4;
+  background-color: #000;
   padding: 10px;
   width: 100%;
   cursor: pointer;
 }
 .button-sumbit{
   display: flex;
+  width: 616px;
+  transform: translateX(6px);
   align-items: center;
   justify-content: center;
-  margin-inline-end: 1rem;
 }
 
 /*   BACKGROUND  */
@@ -144,7 +146,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: #e2dfe4;
+    background: #fff;
   }
   .form-menu{
       width: 100%;
@@ -175,6 +177,46 @@
   }
   .button-sumbit{
     width: 80%;
+  }
+}
+
+
+
+
+
+
+.tech-slideshow {
+  height: 200px;
+  max-width: 616px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow > div {
+  height: 200px;
+  width: 2526px;
+  background: url(tets.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+.tech-slideshow .mover-1 {
+  animation: moveSlideshow 20s linear infinite;
+}
+.tech-slideshow .mover-2 {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  background-position: 0 -200px;
+  animation: moveSlideshow 15s linear infinite;
+}
+
+@keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-66.6666%);  
   }
 }
 
