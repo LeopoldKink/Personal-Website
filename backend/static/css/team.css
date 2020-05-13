@@ -34,6 +34,8 @@
 
 .testimonial-pics img:hover, .testimonial-pics img.active{
   filter: none;
+  border: 1px solid #000;
+  border-radius: 3px;
 }
 
 
@@ -54,9 +56,14 @@
   color: #5c5c5c;
   margin-bottom: 20px;
 }
+.testimonial .img{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
 .testimonial img{
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
 }
 
 .testimonial .description{
