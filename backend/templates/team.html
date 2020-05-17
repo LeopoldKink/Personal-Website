@@ -3,45 +3,59 @@
   <div class="inner-width">
     <h1>Unser Team</h1>
     <div class="testimonial-pics">
-      <img src="/static/img/p1.png" alt="test-1" class="active">
-      <img src="/static/img/p2.png" alt="test-2">
-      <img src="/static/img/p3.png" alt="test-3">
+      <img src="/static/img/p1.png" alt="test-1" class="active" />
+      <img src="/static/img/p2.png" alt="test-2" />
+      <img src="/static/img/p3.png" alt="test-3" />
     </div>
 
     <div class="testimonial-contents">
       <div class="testimonial active" id="test-1">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur et adipisci ut, impedit cumque,
-           similique, eum tenetur, numquam eligendi aliquid. Nulla sit, cupiditate corporis labore, modi natus
-            officiis asperiores!</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+          consequatur et adipisci ut, impedit cumque, similique, eum tenetur,
+          numquam eligendi aliquid. Nulla sit, cupiditate corporis labore, modi
+          natus officiis asperiores!
+        </p>
+        <div class="img">
+          <img src="/static/img/api.png" alt="" />
+        </div>
         <span class="description">Leo / Backend Developer</span>
-        <img src="/static/img/api.png" alt="">
       </div>
 
       <div class="testimonial" id="test-2">
-        <p>Creative Direktor ipsum dolor sit amet, consectetur adipisicing elimet, consectetur
-           adipisicing eli t. Ab consequatur et adipisci ut, impedit cumque, similique,
-            eum tenetur, numquam eligendi aliquid. Nulla sit, cupiditate corporis labore, modi natus officiis asperiores!</p>
+        <p>
+          Creative Direktor ipsum dolor sit amet, consectetur adipisicing
+          elimet, consectetur adipisicing eli t. Ab consequatur et adipisci ut,
+          impedit cumque, similique, eum tenetur, numquam eligendi aliquid.
+          Nulla sit, cupiditate corporis labore, modi natus officiis asperiores!
+        </p>
+        <div class="img">
+          <img src="/static/img/creative.png" alt="" />
+        </div>
         <span class="description">Lorenz / Frontend Developer</span>
-        <img src="/static/img/creative.png" alt="">
       </div>
 
       <div class="testimonial" id="test-3">
-        <p>Vertriebs Direktor  similique, eum tenetur, numquam eligendi aliquid. Nulla sit,
-           cupiditate corporis labore, modi natus officiis asperiores!</p>
+        <p>
+          Vertriebs Direktor similique, eum tenetur, numquam eligendi aliquid.
+          Nulla sit, cupiditate corporis labore, modi natus officiis asperiores!
+        </p>
+        <div class="img">
+          <img src="/static/img/vertrieb.png" alt="" />
+        </div>
         <span class="description">Joni / Frontend Developer</span>
-        <img src="/static/img/vertrieb.png" alt="">
       </div>
     </div>
   </div>
 </div>
 
 <script type="text/javascript">
-  $('.testimonial-pics img').click(function(){
+  $(".testimonial-pics img").click(function () {
     $(".testimonial-pics img").removeClass("active");
     $(this).addClass("active");
 
     $(".testimonial").removeClass("active");
-    $("#"+$(this).attr("alt")).addClass("active");
+    $("#" + $(this).attr("alt")).addClass("active");
   });
 </script>
 

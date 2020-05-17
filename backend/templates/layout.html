@@ -18,7 +18,7 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
       charset="utf-8"
     ></script>
-    <link rel="icon" type="image/x-icon" href="/static/img/toplogo.gif" />
+    <link rel="icon" type="image/x-icon" href="/static/img/logotop.png" />
     <link type="text/css" rel="stylesheet" href="/static/css/layout.css" />
     <link type="text/css" rel="stylesheet" href="/static/css/layout.scss" />
     <link type="text/css" rel="stylesheet" href="/static/css/index.css" />
@@ -45,22 +45,20 @@
   </head>
   <body>
     <div class="header">
-      <h2 class="logo"><img src="/static/img/logoSW.gif" alt="" /></h2>
+      <a href="{{ url_for('index') }}"
+        ><h2 class="logo"><img src="/static/img/logonedsorund.gif" alt="" /></h2
+      ></a>
       <input type="checkbox" id="chk" />
       <label for="chk" class="show-menu-btn">
         <i class="fas fa-ellipsis-h"></i>
       </label>
 
       <ul class="menu">
-        <li><a href="{{ url_for('mail') }}">Mail Us</a></li>
-        <li></li>
-        <li><a href="{{ url_for('webpack') }}">Webpack</a></li>
-        <li></li>
-        <li><a href="{{ url_for('projekte') }}">Projekte</a></li>
-        <li></li>
-        <li><a href="{{ url_for('team') }}">Team</a></li>
-        <li></li>
-        <li><a href="#">Impressum</a></li>
+        <a class="a" href="{{ url_for('mail') }}">Mail Us</a>
+        <a class="a" href="{{ url_for('webpack') }}">Webpack</a>
+        <a class="a" href="{{ url_for('projekte') }}">Projekte</a>
+        <a class="a" href="{{ url_for('team') }}">Team</a>
+        <a class="a" href="#">Impressum</a>
         <label for="chk" class="hide-menu-btn">
           <i class="fas fa-times"></i>
         </label>
