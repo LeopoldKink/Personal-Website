@@ -108,14 +108,18 @@
   text-decoration: none;
   color: #fff;
 }
+
 .arrow {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   top: 90%;
-  transform: translateY(200px);
+  transform: translateY(150px);
   width: 100%;
+}
+#toparrow {
+  transform: translateY(100px);
 }
 .arrow img {
   max-width: 50px;
