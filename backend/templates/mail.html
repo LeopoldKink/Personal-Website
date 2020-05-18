@@ -1,47 +1,82 @@
-{% extends "layout.html" %}
-{% block content %}
+{% extends "layout.html" %} {% block content %}
 <div style="height: 100%;" class="testimonial-section">
   <div class="inner-width">
     <h1>Schreib uns eine Mail!</h1>
-    <br>
-    <br>
-    <br>
+    <br />
+    <br />
+    <br />
 
     <div class="testimonial-contents">
-      <div class="testimonial active" id="test-1">
-        <p>Schreib uns etwas über dein Projekt. Je mehr Infos desto besser.
-          Wir bieten alles an von Website Upgrades zu Online Shops und Handy Apps.
-          Nach ihrer Mail werden wir mit ihnen in Kontakt treten und genaueres besprechen.
-          Wir werden ihnen Anschließend erste Konzept Ideen vorstellen.
+      <div class="testimonialactive" id="test-1">
+        <p>
+          Schreib uns etwas über dein Projekt. Je mehr Infos desto besser. Wir
+          bieten alles an von Website Upgrades zu Online Shops und Handy Apps.
+          Nach ihrer Mail werden wir mit ihnen in Kontakt treten und genaueres
+          besprechen. Wir werden ihnen Anschließend erste Konzept/Ideen
+          vorstellen.
         </p>
-        <img style="width: 60px;height: 60px;transform: rotate(45deg);" src="/static/img/kommunikation.png" alt="">
+        <img
+          style="width: 60px; height: 60px; transform: rotate(45deg);"
+          src="/static/img/kommunikation.png"
+          alt=""
+        />
       </div>
       <span class="description">info@dizzweb.com</span>
+    </div>
+    <div class="arrow" id="mailarrow">
+      <a href="#mail-content-a"
+        ><img src="/static/img/arrow.png" alt="" id="mail-content-a"
+      /></a>
+    </div>
   </div>
-</div>
-<div class="main">
-  <div class="form-menu">
-      <form class="form-mail" action="mailto:leopold.kink@live.de" method="post" enctype="text/plain">
+
+  <div class="main">
+    <div class="form-menu">
+      <form
+        class="form-mail"
+        action="mailto:leopold.kink@live.de"
+        method="post"
+        enctype="text/plain"
+      >
         <div class="name-mail">
-            <div class="form-group">
-                <input name="Mail " type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-              </div>
-            <div class="form-group">
-                <input name="Name " type="name" class="form-control" id="exampleFormControlInput1" placeholder="Name">
-            </div>
+          <div class="form-group">
+            <input
+              name="Mail "
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              name="Name "
+              type="name"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Name"
+            />
+          </div>
         </div>
         <div class="form-group">
-          <textarea name="Projekt " style="resize: none;" class="form-control" id="exampleFormControlTextarea1" placeholder="Dein Projekt" rows="8"></textarea>
+          <textarea
+            name="Projekt "
+            style="resize: none;"
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            placeholder="Dein Projekt"
+            rows="8"
+          ></textarea>
         </div>
         <div class="button-sumbit">
-          <input class="mail-btn" type="submit" value="Projekt abschicken ->">
+          <input class="mail-btn" type="submit" value="Projekt abschicken ->" />
         </div>
       </form>
+    </div>
+    <div class="tech-slideshow">
+      <div class="mover-1"></div>
+      <div class="mover-2"></div>
+    </div>
+    {% endblock content %}
   </div>
-  <div class="tech-slideshow">
-    <div class="mover-1"></div>
-    <div class="mover-2"></div>
-  </div>
-{% endblock content %}
-
-
+</div>

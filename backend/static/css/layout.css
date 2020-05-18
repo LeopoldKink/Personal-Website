@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  scrollbar-track-color: #ff69b4;
+  scrollbar-color: #69ff8f;
+  scrollbar-base-color: #b19cff;
 }
 /*    NAV   */
 .header {

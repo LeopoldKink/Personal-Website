@@ -23,6 +23,7 @@
     <link type="text/css" rel="stylesheet" href="/static/css/layout.scss" />
     <link type="text/css" rel="stylesheet" href="/static/css/index.css" />
     <link type="text/css" rel="stylesheet" href="/static/css/mail.css" />
+    <link type="text/css" rel="stylesheet" href="/static/css/impresum.css" />
     <link rel="stylesheet" href="/static/css/team.css" />
     <link rel="stylesheet" href="/static/css/projekte.css" />
     <link rel="stylesheet" href="/static/css/style.css" />
@@ -58,7 +59,7 @@
         <a class="a" href="{{ url_for('webpack') }}">Webpack</a>
         <a class="a" href="{{ url_for('projekte') }}">Projekte</a>
         <a class="a" href="{{ url_for('team') }}">Team</a>
-        <a class="a" href="#">Impressum</a>
+        <a class="a" href="{{url_for('impresum')}}">Impressum</a>
         <label for="chk" class="hide-menu-btn">
           <i class="fas fa-times"></i>
         </label>
