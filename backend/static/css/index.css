@@ -1,120 +1,120 @@
-main{
-    margin: 0;
-    padding: 0;
+main {
+  margin: 0;
+  padding: 0;
 }
-.banner{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
+.banner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fffdfe;
 }
-.banner video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
+.banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.2;
 }
-.banner .content{
-    position: relative;
-    z-index: 1;
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-    transition: 4s;
+.banner .content {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  transition: 4s;
 }
-.banner .content h1{
-    margin: 0;
-    padding: 0;
-    font-size: 4.5em;
-    text-transform: uppercase;
-    color: #000;
-    text-shadow: 2px 2px 4px #666;
+.banner .content h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 4.5em;
+  text-transform: uppercase;
+  color: #000;
+  text-shadow: 2px 2px 4px #666;
 }
-.banner .content p{
-    margin: 0;
-    padding: 0;
-    font-size: 1.5em;
-    color: #000;
-    text-shadow: 2px 2px 4px #666;
+.banner .content p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  color: #ffa0cf;
+  text-shadow: 2px 2px 4px #666;
 }
-  /*  CONTENT 2 */
-
+/*  CONTENT 2 */
 
 /*  ANIMATION  */
 .output {
-    text-align:center;
-    font-family: 'Courier New', Courier, monospace;
-    color:#000;
-    z-index: 1000;
-    transform: translateZ(100px);
-    opacity: 1;
-  }
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  color: #ffa0cf;
+  z-index: 1000;
+  transform: translateZ(100px);
+  opacity: 1;
+}
 
-  .output {
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    color: #000;
-    z-index: 1000;
-    font-size: 30px;
-    font-weight: 900;
+.output {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  color: #ffa0cf;
+  z-index: 1000;
+  font-size: 30px;
+  font-weight: 900;
+  opacity: 1;
+}
+.output h1 {
+  font-size: 50px;
+  z-index: 1000;
+  opacity: 1;
+  color: #000;
+}
+
+/* Cursor Styling */
+.cursor::after {
+  content: "|";
+  display: inline-block;
+  margin-left: 3px;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  opacity: 1;
+}
+
+h1.cursor::after {
+  height: 24px;
+  width: 13px;
+  opacity: 1;
+}
+
+p.cursor::after {
+  height: 13px;
+  width: 6px;
+  opacity: 1;
+}
+
+@keyframes blink {
+  0% {
     opacity: 1;
   }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 1150px) {
   .output h1 {
-    font-size: 50px;
-    z-index: 1000;
-    opacity: 1;
-    color: #000;
+    font-size: 25px;
   }
-  
-  /* Cursor Styling */
-  .cursor::after {
-    content: '|';
-    display: inline-block;
-    margin-left: 3px;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    opacity: 1;
+  .output {
+    font-size: 15px;
+    transform: translateY(-130px);
   }
-  
-  h1.cursor::after {
-    height: 24px;
-    width: 13px;
-    opacity: 1;
-  }
-  
-  p.cursor::after {
-    height: 13px;
-    width: 6px;
-    opacity: 1;
-  }
-  
-  @keyframes blink {
-    0% {
-      opacity: 1;
-    }
-    49% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  @media screen and (max-width:1150px){
-    .output h1{
-      font-size: 25px
-    }
-    .output{
-      font-size: 15px;
-      transform: translateY(-130px);
-    }
-  }
+}
