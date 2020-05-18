@@ -3,14 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* #fcc0de */
 .body-webpack {
-  transform: translateY(30%);
+  transform: translateY(20%);
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 85vh;
   font-family: "Courier New", Courier, monospace;
   background: #fff;
   background-position: fixed;
@@ -18,15 +19,19 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+.description {
+  padding-bottom: 2px;
+  border-bottom: 1.5px solid #ff85c2;
+}
 .container-webpack {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 900px;
+  width: 800px;
   height: 500px;
   background: #fff;
-  margin: 20px;
+  margin: 0;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 .container-webpack .imgBx-webpack {
@@ -35,7 +40,7 @@
   justify-content: center;
   align-items: center;
   left: 30px;
-  width: 50%;
+  width: 40%;
   height: 100%;
   background: #fff;
 }
@@ -51,13 +56,13 @@
 }
 .container-webpack .imgBx-webpack img {
   position: relative;
-  width: 450px;
+  width: 300px;
 }
 .container-webpack .details {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 60%;
   height: 100%;
   box-sizing: border-box;
   padding: 40px;
@@ -89,7 +94,7 @@
   float: left;
 }
 .container-webpack .details button {
-  background: #000;
+  background: #ff96ca;
   color: #fff;
   border: none;
   box-shadow: none;
@@ -115,11 +120,13 @@
   align-items: center;
   position: relative;
   top: 90%;
-  transform: translateY(150px);
+  transform: translateY(100px);
   width: 100%;
 }
 #toparrow {
-  transform: translateY(100px);
+  margin-top: 0px;
+  transform: translateY(150px);
+  margin-bottom: 50px;
 }
 .arrow img {
   max-width: 50px;

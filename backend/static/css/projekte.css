@@ -16,10 +16,11 @@
 
 /* CARDS*/
 .containerProjkt {
-  margin-top: 10%;
-  margin-bottom: 15%;
+  margin: 0;
 }
 .Projektvoerstellung {
+  margin-top: 250px;
+  margin-bottom: 100px;
   margin-left: auto;
   margin-right: auto;
   width: 800px;
@@ -27,9 +28,20 @@
   position: relative;
   box-shadow: 0 0 0;
   padding: 20px;
-  margin-bottom: 15%;
+  margin-bottom: 30px;
+  background-color: transparent;
 }
 
+#projekt-content-0 {
+  margin-top: 16%;
+}
+#projekttoparrow {
+  transform: translateY(160px);
+  margin-bottom: 60px;
+}
+#projektarrow {
+  transform: translateY(140px);
+}
 .ProjektIMG {
   position: relative;
   float: left;
@@ -46,6 +58,7 @@
 .ProjektIMG a img {
   width: 100%;
   float: left;
+  margin-top: 30px;
 }
 
 .ProjektText h3 {
@@ -72,9 +85,9 @@
 }
 
 .ProjektText button {
-  background: #000;
+  background: #ff96ca;
   color: #fff;
-  border: 3px solid black;
+  border: none;
   box-shadow: none;
   outline: none;
   padding: 12px 17px;
@@ -93,24 +106,16 @@
   color: #fff;
 }
 .ProjektText button:hover {
-  background-color: white;
-  color: black;
+  background-color: #ff96ca;
+  color: white;
   transition-duration: 0.1s;
 }
 
-.ProjektText button:hover a {
-  color: black;
-}
-
-.ProjektText button a:hover {
-  color: black;
-}
-.Projektvoerstellung:hover {
+.Projektvoerstellung {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition-duration: 0.5s;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
   * {
     margin: 0;
     padding: 0;
@@ -124,20 +129,23 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    height:auto;
+    height: auto;
     position: relative;
     box-shadow: 0 0 0;
     padding: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
-  .ProjektIMG{
+  .ProjektIMG {
     align-items: center;
     align-content: center;
+    align-self: center;
     display: flex;
     width: 100%;
-    left: initial;
   }
-  .ProjektText{
+  .ProjektIMG img {
+    max-width: 350px;
+  }
+  .ProjektText {
     width: 100% !important;
     height: auto;
     padding-top: 30px;
@@ -145,7 +153,7 @@
     padding-left: 0px;
     margin: 0px;
   }
-  .ProjektText p{
+  .ProjektText p {
     max-width: 100%;
     margin-left: 0;
     padding: 0;
@@ -153,6 +161,4 @@
     padding-bottom: 15px;
     transform: translateX(0px);
   }
-  
 }
-
