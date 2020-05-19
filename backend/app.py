@@ -66,6 +66,6 @@ def projekte():
     return render_template('projekte.html')
 
 
-@app.route('/impresum')
+@app.route('/impressum')
 def impresum():
     return render_template('impresum.html')
