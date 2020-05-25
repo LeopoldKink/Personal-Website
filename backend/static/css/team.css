@@ -3,6 +3,7 @@
   background: #fff;
   padding: 80px 0;
   text-align: center;
+  
 }
 #description {
   padding-top: 10px;
@@ -37,8 +38,6 @@
 .testimonial-pics img:hover,
 .testimonial-pics img.active {
   filter: none;
-  border: 1px solid #000;
-  border-radius: 3px;
 }
 
 .testimonial-contents {
